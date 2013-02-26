@@ -1,0 +1,64 @@
+           CALL FOR WORKSHOP AND CO-LOCATED EVENT PROPOSALS
+                              POPL 2014
+
+41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages
+                       POPL: 22-24 January 2014
+                  Events: 19-21, 25-26 January 2014
+                        San Diego, California
+                    http://popl.mpi-sws.org/2014/
+
+The 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming
+Languages (POPL 2014) will be held in San Diego, California.
+
+POPL provides a forum for the discussion of fundamental principles and
+important innovations in the design, definition, analysis,
+transformation, implementation and verification of programming
+languages, programming systems, and programming abstractions.
+
+Both experimental and theoretical papers on principles and innovations
+are welcome, ranging from formal frameworks to reports on practical
+experiences.
+
+Proposals are invited for workshops and other events to be co-located
+with POPL 2014. Events can either be sponsored by SIGPLAN
+(http://acm.org/sigplan/) or supported through in-cooperation status.
+
+Workshops should be more informal and focused than POPL itself,
+include sessions that enable interaction among the workshop attendees,
+and be fairly low cost. The preference is for one-day workshops, but
+other schedules can also be considered.
+
+----------------------------------------------------------------------
+
+Submission details
+  Deadline for submission:      26 April 2014
+  Notification of acceptance:   31 May 2014
+
+A submission form is available here:
+
+   http://popl.lambda-calcul.us/2014/
+
+Sponsored workshops are required to produce a final report after the
+workshop has taken place that is suitable for publication in SIGPLAN
+Notices. Further information about SIGPLAN sponsorship and
+in-cooperation status of workshops is available here:
+
+   http://www.sigplan.org/Resources/Proposals/Cooperated
+   http://www.sigplan.org/Resources/Proposals/Sponsored
+
+----------------------------------------------------------------------
+
+Selection committee
+
+All event proposals will be evaluated by a committee comprising the
+following members of the POPL 2014 organising committee, together with
+the members of the SIGPLAN executive committee.
+
+  Suresh Jagannathan  Purdue University            General chair
+  Peter Sewell        University of Cambridge      Program chair
+  David Van Horn      Northeastern University      Workshops chair 
+
+Further information
+
+Any queries regarding POPL 2014 co-located event proposals should be
+addressed to the workshops chair, David Van Horn.

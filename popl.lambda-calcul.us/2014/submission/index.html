@@ -1,0 +1,690 @@
+
+<html>
+
+<head>
+<title>POPL 2014 - Proposal Submission for Co-located Events</title>
+
+<style>
+
+
+body {
+ font-family: Palatino, Georgia ;
+ text-align: center ;
+ background-color: #dddddd ;
+}
+
+#page {
+ margin-top: 40px ;
+ width: 780px ;
+ margin-left: auto ;
+ margin-right: auto ;
+ text-align: left ;
+}
+
+hr {
+ margin-top: 20px ;
+ margin-bottom: 20px ;
+}
+
+div.module {
+  width: 560px ;
+  background: white ;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-bottom: 20px ;
+  padding: 20px ;
+  padding-left: 40px ;
+  padding-right: 40px ;
+  border-radius: 9px ;
+  -moz-border-radius: 9px ;
+  -o-box-shadow: 0 5px 5px #333333 ;
+  -webkit-box-shadow: 0 5px 5px #333333 ;
+  -moz-box-shadow: 0 5px 5px #333333 ;
+  box-shadow: 0 5px 5px #333333 ;
+}
+
+</style>
+
+<script>
+<!--
+function disableEnterKey(e)
+{
+     var key;
+
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox
+
+     if(key == 13)
+          return false;
+     else
+          return true;
+}
+-->
+</script>
+
+</head>
+
+<body>
+<div id="page">
+
+  <div id="header" class="module">
+  <center>
+  
+  
+  <h2> <font color="#ff0000"> Proposal form for co-located events </font> </h2>
+  
+  <h3> 
+  POPL: 22-24 January 2014
+  <br />
+  Events: 19-20, 25-26 January 2014
+  <br /> 
+  San Diego, California
+  </h3></center>
+
+
+  </div> <!-- /header -->
+
+
+
+  <div id="content" class="module">
+  <form method="POST" action="./submit.php">
+
+
+
+  <h2>Sponsorship</h2>
+
+     <p>
+     All events must have a sponsor that takes legal and financial responsibility.
+     </p>
+
+     <p>
+     Please select one of the options for sponsorship:
+     </p>
+
+     <table>
+     <tr>
+     <td valign="top">
+      <input type="radio" onKeyPress="return disableEnterKey(event)" name="sponsorship" value="sigplan" checked />
+     </td>
+     <td>
+     <div>
+     We are applying for SIGPLAN sponsorship.
+
+      <p>
+      Please carefully review the 
+      <a href="http://www.sigplan.org/">SIGPLAN</a> sponsorship requirements:
+      </p>
+
+      <ul>
+       <li><a href="http://www.sigplan.org/sigplan_workshop_proposal.htm">Sponsored workshops (or conferences)</a></li>
+       <li><a href="http://www.sigplan.org/sigplan_sponsorship_proposal.htm">Any sponsored event (like a tutorial)</a></li>
+       <li><a href="http://www.sigplan.org/programchairs.htm">Guidelines for SIGPLAN program chairs</a></li>
+      </ul>
+
+      <p>
+      The POPL organizers will automatically forward accepted events to the 
+      SIGPLAN executive committee for approval.
+      </p>
+     </div>
+     </td>
+     </tr>
+
+     <tr>
+     <td valign="top">
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="sponsorship" value="other" />
+     </td>
+     <td>
+     <div>
+     We are sponsored by 
+     <input type="text" onKeyPress="return disableEnterKey(event)" name="sponsor" onKeyPress="return disableEnterKey(event)" />
+     </p>
+
+     <p>
+      Non-SIGPLAN-sponsored events should carefully review the SIGPLAN
+      <a href="http://www.sigplan.org/sigplan_incooperation_proposal__.htm">in-cooperation</a> requirements.
+     </p>
+     </div>
+     </td>
+     </tr>
+     </table>
+
+
+   <h2>Event type</h2>
+
+   <p>
+   Please select what type of event you plan to hold:
+   </p>
+
+   <ul style="list-style: none;">
+    <li>
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="event_type" value="workshop" checked /> Workshop
+    </li>
+    <li>
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="event_type" value="conference" /> Conference
+    </li>
+    <li>
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="event_type" value="tutorial" /> Tutorial
+    </li> 
+    <li>
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="event_type" value="other" /> Other:
+     <input type="text" onKeyPress="return disableEnterKey(event)" name="other_description">
+    </li>
+   </ul>
+
+
+   <h2>Event information</h2>
+
+   <table>
+    <tr>
+      <td style="width: 125px;">
+       Full title 
+      </td>
+      <td><input name="full_name" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Short name
+     </td>
+     <td><input name="short_name" type="text" onKeyPress="return disableEnterKey(event)" id="shortName" /> ex: TLDI
+     </td>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td>
+      <span id="shortWarn" style="color: red; display: none;">Short name must match regex <code>[-A-Za-z0-9_]+</code></span>
+    </td>
+    </tr>
+
+    <tr>
+     <td>
+      Event URL
+     </td>
+     <td><input name="url" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+
+
+    <tr>
+     <td valign="top">
+      Goals/focus
+     </td>
+     <td><textarea name="goals" style="width: 300px; height: 200px;" ></textarea></td>
+    </tr>
+
+
+    <tr>
+     <td valign="top">
+      Plans for publicity
+     </td>
+     <td><textarea name="publicity" style="width: 300px; height: 200px;" ></textarea></td>
+    </tr>
+
+    <tr>
+     <td valign="top">
+      Plans for call for papers and/or participation:
+     </td>
+     <td><textarea name="cfp" style="width: 300px; height: 200px;" ></textarea></td>
+    </tr>
+
+
+
+    <tr>
+     <td valign="top">
+      Target audience 
+     </td>
+     <td><textarea name="audience" style="width: 300px; height: 200px;" ></textarea></td>
+    </tr>
+
+    <tr>
+     <td valign="top">
+      Estimated 
+      Attendance
+     </td>
+     <td><input type="text" onKeyPress="return disableEnterKey(event)" name="attendance" /> persons</td>
+    </tr>
+
+    <tr>
+     <td valign="top">
+      Duration
+     </td>
+     <td><input type="text" onKeyPress="return disableEnterKey(event)" name="duration" /> days</td>
+    </tr>
+
+
+
+   </table>
+
+ <h2>Organizers</h2>
+
+  <p>
+  Please tell us about the organizers.
+  </p>
+
+  <p>
+  <em>Please note that the program committee of SIGPLAN-sponsored events
+  is subject to SIGPLAN approval in accordance with the
+  <a href="http://www.sigplan.org/DiversityPolicy.htm">diversity policy</a>.</em>
+  </p>
+
+  <table id="organization">
+
+    <tr id="lastOrganizer"> <td></td><td><input type="button" id="addOrganizer" value="Add another organizer" /></td></tr>
+
+    <tr>
+     <td valign="top" style="width: 125px;">
+      Anticipated program committee
+      (if applicable)
+     </td>
+     <td><textarea name="goals" style="width: 300px; height: 200px;" ></textarea></td>
+    </tr>
+  </table>
+
+
+  <h2>Proceedings</h2>
+
+   <p>
+    Please describe your plans for a proceedings:    
+   </p>
+
+   <ul style="list-style: none;">
+
+    <li>
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="proceedings" value="acm" checked /> We will publish through the ACM. 
+    </li>
+
+    <li>
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="proceedings" value="tr" /> We will publish proceedings as a university technical report.
+    </li>
+ 
+    <li>
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="proceedings" value="none" /> We will not have a proceedings.
+    </li>
+
+    <li>
+     <input type="radio" onKeyPress="return disableEnterKey(event)" name="proceedings" value="notsigplan" /> We will not be SIGPLAN-sponsored.
+    </li>
+  
+   </ul>
+
+
+   <p>
+   Please note that POPL may require all SIGPLAN-sponsored events with a published proceedings to publish them electronically (e.g. online, USB stick), in lieu 
+   of printed proceedings.
+   </p>
+
+
+  <h2>Past events</h2>
+
+   <p>
+   Please provide information on past holdings of this event for up to three years, if such information is available.
+   </p>
+
+
+   <h2>Year 1</h2>
+   <table>
+    <tr>
+      <td style="width: 125px;">
+      Dates
+      </td>
+      <td><input name="past[0][dates]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Location
+     </td>
+     <td><input name="past[0][location]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Organizers
+     </td>
+     <td><input name="past[0][organizers]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Website
+     </td>
+     <td><input name="past[0][website]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      # Submitted
+     </td>
+     <td><input name="past[0][submissions]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      # Accepted
+     </td>
+     <td><input name="past[0][accepted]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Attendance
+     </td>
+     <td><input name="past[0][attendees]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Registration fee
+     </td>
+     <td><input name="past[0][fee]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Revenue
+     </td>
+     <td><input name="past[0][revenue]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Cost
+     </td>
+     <td><input name="past[0][cost]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+
+
+   </table>
+
+
+
+
+   <h2>Year 2</h2>
+   <table>
+    <tr>
+      <td style="width: 125px;">
+      Dates
+      </td>
+      <td><input name="past[1][dates]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Location
+     </td>
+     <td><input name="past[1][location]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Organizers
+     </td>
+     <td><input name="past[1][organizers]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Website
+     </td>
+     <td><input name="past[1][website]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      # Submitted
+     </td>
+     <td><input name="past[1][submissions]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      # Accepted
+     </td>
+     <td><input name="past[1][accepted]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Attendance
+     </td>
+     <td><input name="past[1][attendees]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Registration fee
+     </td>
+     <td><input name="past[1][fee]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Revenue
+     </td>
+     <td><input name="past[1][revenue]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Cost
+     </td>
+     <td><input name="past[1][cost]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+
+
+   </table>
+
+
+
+   <h2>Year 3</h2>
+   <table>
+    <tr>
+      <td style="width: 125px;">
+      Dates
+      </td>
+      <td><input name="past[2][dates]" type="text"  onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Location
+     </td>
+     <td><input name="past[2][location]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Organizers
+     </td>
+     <td><input name="past[2][organizers]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Website
+     </td>
+     <td><input name="past[2][website]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      # Submitted
+     </td>
+     <td><input name="past[2][submissions]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      # Accepted
+     </td>
+     <td><input name="past[2][accepted]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Attendance
+     </td>
+     <td><input name="past[2][attendees]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Registration fee
+     </td>
+     <td><input name="past[2][fee]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Revenue
+     </td>
+     <td><input name="past[2][revenue]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+    <tr>
+     <td>
+      Cost
+     </td>
+     <td><input name="past[2][cost]" type="text" onKeyPress="return disableEnterKey(event)" style="width: 300px;" /></td>
+    </tr>
+
+
+
+   </table>
+
+
+
+
+
+
+
+  <h2>Financial resources</h2>
+
+   <p>
+   <em>This section is for SIGPLAN-sponsored events only.</em>
+   </p>
+   
+   <p>
+   If you have or anticipate additional sources of funding (grants or other sponsors), please
+   describe them:
+   </p>
+
+   <textarea name="additional_funds" style="width: 500px; height: 100px;">
+   </textarea>
+
+
+  <h2>Additional information</h2>
+
+   <p>
+   Please tell us any additional information about your event that you would like the POPL organizers to know:
+   </p>
+
+   <textarea name="additional" style="width: 500px; height: 300px;"></textarea>
+
+  <h2>POPL requirements and submission</h2>
+
+<p>
+To simplify conference management and provide a seamless experience 
+for attendees, we will require each co-located event, 
+whether SIGPLAN-sponsored or not, to use POPL-designated 
+management and registration services, to provide wireless internet 
+access, and to cover a pro-rated portion of the conference-negotiated 
+costs of these services in its budget. 
+</p>
+
+<p>
+In addition, we will require all events to cover their share of the 
+costs for common continental breakfast, mid-morning, and afternoon snack 
+breaks (as appropriate for the time of day that the event is scheduled). 
+</p>
+
+<p>
+Other meals (e.g., lunch or dinner) and services (e.g., audio-visual 
+equipment) are at the discretion of each event and will be charged 
+to the event at conference-negotiated rates.  These options must be 
+coordinated with the workshop chair. 
+</p>
+    
+ 
+
+  
+  <div style="height: 50px;">
+   <center>
+   <input type="submit" id="submit" style="display: block;" value="We acknowledge these requirements and submit this proposal." />
+   </center>
+  </div>
+
+
+
+
+
+  </form>
+  </div> <!-- /content -->
+
+
+
+
+</div> <!-- /page -->
+
+
+<script>
+var SubmitButton = document.getElementById("submit") ;
+var AcceptanceBox = document.getElementById("acceptance") ;
+/*
+AcceptanceBox.onclick = function () {
+  if (AcceptanceBox.checked) {
+    SubmitButton.style.display = "block" ;
+  } else {
+    SubmitButton.style.display = "none" ;
+  }
+} ;
+*/
+
+var OrganizationTable = document.getElementById("organization") ;
+var LastOrganizer = document.getElementById("lastOrganizer") ;
+var NumOrganizers = 0 ;
+
+function AddOrganizer() {
+  NumOrganizers++ ;
+  var n = NumOrganizers-1; 
+  var orghtml = "" ;
+  orghtml += '<table>' ;
+  orghtml += '<tr><td>Name</td>        <td><input type="text" onKeyPress="return disableEnterKey(event)" name="org['+n+'][name]"        /></td></tr>' ;
+  orghtml += '<tr><td>Affiliation</td> <td><input type="text" onKeyPress="return disableEnterKey(event)" name="org['+n+'][affiliation]" /></td></tr>' ; 
+  orghtml += '<tr><td>Address</td>     <td><input type="text" onKeyPress="return disableEnterKey(event)" name="org['+n+'][address]"     /></td></tr>' ;
+  orghtml += '<tr><td>Email</td>       <td><input type="text" onKeyPress="return disableEnterKey(event)" name="org['+n+'][email]"       /></td></tr>' ; 
+  orghtml += '<tr><td colspan="2"><input type="checkbox" onKeyPress="return disableEnterKey(event)" checked name="org['+n+'][included]"/> Included on event-related email</td></tr>'
+  orghtml += '</table>' ;
+
+  var el = document.createElement("tr") ;
+  LastOrganizer.parentNode.insertBefore(el, LastOrganizer);
+
+  var t = '<td valign="top">Organizer '+(n+1)+'</td><td>'+orghtml+'</td>' ;
+  el.innerHTML = t ;
+}
+
+document.getElementById("addOrganizer").onclick = AddOrganizer ;
+
+AddOrganizer() ;
+
+
+var ShortNameField = document.getElementById("shortName") ;
+var ShortWarn = document.getElementById("shortWarn") ;
+
+ShortNameField.onkeyup = function (event) {
+ if (!String(ShortNameField.value).match(/^[-A-Za-z0-9]+$/)) {
+   ShortWarn.style.display = "block" ;
+ } else {
+   ShortWarn.style.display = "none" ;
+ }
+} 
+</script>
+
+
+</body>
+</html>
